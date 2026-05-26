@@ -100,7 +100,7 @@ export function Sobre() {
               <div className="absolute -top-3 -right-3 w-full h-full border border-champagne/20 rounded pointer-events-none" />
               <div className="relative border border-champagne/20 rounded overflow-hidden">
                 <img
-                  src="/images/mateus-desk-1.jpg"
+                  src={`${import.meta.env.BASE_URL}images/mateus-desk-1.jpg`}
                   alt="Matheus Giovanne em atendimento jurídico individual"
                   className="w-full aspect-[4/3] object-cover"
                   loading="lazy"

@@ -18,7 +18,7 @@ const ARTICLES: Article[] = [
     category: 'Direito Civil',
     readTime: '5 min',
     date: '15 Jan 2026',
-    image: '/images/articles/prevention.jpg',
+    image: `${import.meta.env.BASE_URL}images/articles/prevention.jpg`,
   },
   {
     title: 'Cuidados antes de assinar um contrato',
@@ -27,7 +27,7 @@ const ARTICLES: Article[] = [
     category: 'Contratos',
     readTime: '7 min',
     date: '8 Jan 2026',
-    image: '/images/articles/contracts.jpg',
+    image: `${import.meta.env.BASE_URL}images/articles/contracts.jpg`,
   },
   {
     title: 'Como organizar documentos antes de uma consulta jurídica',
@@ -36,7 +36,7 @@ const ARTICLES: Article[] = [
     category: 'Empresarial',
     readTime: '4 min',
     date: '20 Dez 2025',
-    image: '/images/articles/documents.jpg',
+    image: `${import.meta.env.BASE_URL}images/articles/documents.jpg`,
   },
   {
     title: 'Diferença entre atuação consultiva e contenciosa',
@@ -45,7 +45,7 @@ const ARTICLES: Article[] = [
     category: 'Família',
     readTime: '6 min',
     date: '10 Dez 2025',
-    image: '/images/articles/consultation.jpg',
+    image: `${import.meta.env.BASE_URL}images/articles/consultation.jpg`,
   },
 ];
 

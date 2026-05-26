@@ -89,7 +89,7 @@ export function Advogado() {
             {/* Main photo */}
             <div className="relative rounded overflow-hidden shadow-[0_20px_60px_rgba(28,43,72,0.12)]">
               <img
-                src="/images/mateus-desk-2.jpg"
+                src={`${import.meta.env.BASE_URL}images/mateus-desk-2.jpg`}
                 alt="Matheus Giovanne — advogado em seu ambiente profissional"
                 className="w-full object-cover"
                 style={{ aspectRatio: '3/4', objectPosition: 'center top' }}
