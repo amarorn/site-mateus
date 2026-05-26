@@ -15,8 +15,8 @@ const CONTACT_METHODS = [
   {
     icon: Phone,
     label: 'Telefone',
-    value: '(11) 3456-7890',
-    href: 'tel:+551134567890',
+    value: '+55 84 99660-2244',
+    href: 'tel:+5584996602244',
   },
   {
     icon: Mail,
@@ -142,7 +142,7 @@ export function Contato() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5584996602244"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 mt-8 px-7 py-3.5 rounded-full font-sans text-sm font-medium text-white transition-all duration-200 hover:brightness-110 hover:shadow-lg"
