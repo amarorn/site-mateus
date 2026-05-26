@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo — Matheus Giovanne · Modernidade · Compromisso · Confiança</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy:       #1C2B48;
+    --navy-deep:  #0D1525;
+    --champagne:  #D8C6A8;
+    --offwhite:   #F4F1EB;
+    --slate:      #5C6880;
+  }
+
+  body {
+    background: var(--navy-deep);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    padding: 56px 40px 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* ── HEADER ── */
+  .intro { margin-bottom: 72px; }
+  .intro-label {
+    font-size: 10px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--champagne);
+    opacity: .6;
+  }
+  .intro h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: .02em;
+    line-height: 1.1;
+  }
+  .intro h1 em {
+    color: var(--champagne);
+    font-style: italic;
+  }
+  .intro p {
+    font-size: 12px;
+    color: rgba(255,255,255,.35);
+    margin-top: 10px;
+    letter-spacing: .06em;
+    max-width: 460px;
+    line-height: 1.7;
+  }
+
+  /* ── CONCEPT BLOCK ── */
+  .concept { margin-bottom: 80px; }
+
+  .concept-meta {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .concept-num {
+    font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--champagne);
+    opacity: .5;
+    flex-shrink: 0;
+  }
+  .concept-title {
+    font-family: 'Instrument Serif', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: .02em;
+  }
+  .concept-values {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .tag {
+    font-size: 9px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border: 1px solid rgba(216,198,168,.2);
+    color: rgba(216,198,168,.55);
+    border-radius: 2px;
+  }
+
+  .concept-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  .swatch-dark {
+    background: var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 52px 40px;
+    gap: 10px;
+    min-height: 200px;
+  }
+  .swatch-light {
+    background: var(--offwhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 52px 40px;
+    gap: 10px;
+    min-height: 200px;
+  }
+  .swatch-lbl {
+    font-size: 8px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+  }
+  .swatch-dark .swatch-lbl { color: rgba(255,255,255,.2); }
+  .swatch-light .swatch-lbl { color: rgba(28,43,72,.25); }
+
+  .concept-rationale {
+    margin-top: 20px;
+    font-size: 11.5px;
+    color: rgba(255,255,255,.3);
+    line-height: 1.8;
+    letter-spacing: .04em;
+  }
+  .concept-rationale strong { color: rgba(216,198,168,.6); font-weight: 500; }
+
+  svg { display: block; }
+
+  hr {
+    border: none;
+    border-top: 1px solid rgba(216,198,168,.07);
+    margin-bottom: 80px;
+  }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <p class="intro-label">Identidade Visual · Proposta Final</p>
+  <h1>Logo para <em>Matheus Giovanne</em></h1>
+  <p>Três direções refinadas, cada uma construída em torno dos valores<br>
+  modernidade · compromisso · confiança</p>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     CONCEITO A — ARCO FECHADO / ARC OF COMMITMENT
+════════════════════════════════════════════════════════ -->
+<div class="concept">
+  <div class="concept-meta">
+    <span class="concept-num">A</span>
+    <span class="concept-title">Arco Fechado</span>
+    <div class="concept-values">
+      <span class="tag">Compromisso</span>
+      <span class="tag">Confiança</span>
+      <span class="tag">Moderno</span>
+    </div>
+  </div>
+
+  <div class="concept-row">
+    <!-- DARK -->
+    <div class="swatch-dark">
+      <svg viewBox="0 0 260 80" width="260">
+        <!--
+          Arco de 300° abrindo em baixo.
+          Centro: 32,36  Raio: 26
+          Start (120°): x=32+26*cos120=32-13=19, y=36+26*sin120=36+22.5=58.5 → 19,59
+          End  (60°):   x=32+26*cos60=32+13=45,  y=36+26*sin60=36+22.5=58.5 → 45,59
+          large-arc=1, sweep=1 (clockwise)
+        -->
+        <path d="M 19,59 A 26,26 0 1 1 45,59"
+          stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+        <!-- Dot anchor champagne no centro inferior -->
+        <circle cx="32" cy="62" r="4" fill="#D8C6A8"/>
+        <!-- Small inner dot navy -->
+        <circle cx="32" cy="62" r="1.8" fill="#1C2B48"/>
+
+        <!-- Sep -->
+        <line x1="76" y1="12" x2="76" y2="68" stroke="rgba(216,198,168,0.2)" stroke-width="0.8"/>
+
+        <!-- MATHEUS -->
+        <text x="88" y="36" font-family="'Instrument Serif',serif"
+          font-size="22" fill="white" letter-spacing="4">MATHEUS</text>
+        <!-- GIOVANNE champagne -->
+        <text x="88" y="58" font-family="'Instrument Serif',serif"
+          font-size="22" fill="#D8C6A8" letter-spacing="2.5">GIOVANNE</text>
+        <!-- thin line -->
+        <line x1="88" y1="64" x2="258" y2="64" stroke="rgba(216,198,168,0.2)" stroke-width="0.6"/>
+        <!-- ADVOGADO -->
+        <text x="88" y="72" font-family="'Inter',sans-serif"
+          font-size="6.5" fill="rgba(216,198,168,0.4)" letter-spacing="5.5">ADVOGADO</text>
+      </svg>
+      <span class="swatch-lbl">Fundo escuro</span>
+    </div>
+
+    <!-- LIGHT -->
+    <div class="swatch-light">
+      <svg viewBox="0 0 260 80" width="260">
+        <path d="M 19,59 A 26,26 0 1 1 45,59"
+          stroke="#1C2B48" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="32" cy="62" r="4" fill="#D8C6A8"/>
+        <circle cx="32" cy="62" r="1.8" fill="#1C2B48"/>
+        <line x1="76" y1="12" x2="76" y2="68" stroke="rgba(28,43,72,0.15)" stroke-width="0.8"/>
+        <text x="88" y="36" font-family="'Instrument Serif',serif"
+          font-size="22" fill="#1C2B48" letter-spacing="4">MATHEUS</text>
+        <text x="88" y="58" font-family="'Instrument Serif',serif"
+          font-size="22" fill="#D8C6A8" letter-spacing="2.5">GIOVANNE</text>
+        <line x1="88" y1="64" x2="258" y2="64" stroke="rgba(28,43,72,0.12)" stroke-width="0.6"/>
+        <text x="88" y="72" font-family="'Inter',sans-serif"
+          font-size="6.5" fill="rgba(28,43,72,0.3)" letter-spacing="5.5">ADVOGADO</text>
+      </svg>
+      <span class="swatch-lbl">Fundo claro</span>
+    </div>
+  </div>
+
+  <p class="concept-rationale">
+    O arco quase fechado representa <strong>compromisso em andamento</strong> — uma promessa que envolve
+    e protege. O ponto champagne no centro inferior é a âncora: <strong>confiança, solidez, ponto fixo
+    numa relação profissional</strong>. A geometria pura e os traços bold comunicam <strong>modernidade</strong>
+    sem abrir mão de autoridade.
+  </p>
+</div>
+
+<hr>
+
+<!-- ══════════════════════════════════════════════════════
+     CONCEITO B — "G" GEOMÉTRICO BOLD
+════════════════════════════════════════════════════════ -->
+<div class="concept">
+  <div class="concept-meta">
+    <span class="concept-num">B</span>
+    <span class="concept-title">Inicial G — Geométrico Bold</span>
+    <div class="concept-values">
+      <span class="tag">Identidade Pessoal</span>
+      <span class="tag">Moderno</span>
+      <span class="tag">Força</span>
+    </div>
+  </div>
+
+  <div class="concept-row">
+    <!-- DARK -->
+    <div class="swatch-dark">
+      <svg viewBox="0 0 260 80" width="260">
+        <!--
+          G geométrico:
+          Arco de 270° (abrindo à direita no meio)
+          Centro: 32,38  Raio: 24
+          Start (0°=direita): 56,38 — mas quero que a abertura seja no meio à direita
+          Vou usar start=45° e end=-45° (ou 315°), sweep counterclockwise = 270°
+          Start 45°:  x=32+24*cos45=32+17=49,  y=38+24*sin45=38-17=21  → wait SVG y is flipped
+          
+          No SVG: ângulo 0°=direita, 90°=baixo, 180°=esquerda, 270°=cima
+          Quero abertura no lado direito, meio = 0° (3 o'clock)
+          Gap: de -45° até 45° (ou seja, 315° a 45°)
+          Arc from 45° to 315°, going clockwise = 270°
+          
+          Start 45°: x=32+24*cos(45°)=32+17=49, y=38+24*sin(45°)=38+17=55
+          End 315°:  x=32+24*cos(315°)=32+17=49, y=38+24*sin(315°)=38-17=21
+          
+          large-arc=1, sweep=1 (clockwise)
+          SVG: M 49,55 A 24,24 0 1 1 49,21
+        -->
+        <!-- G arc: 270°, bold -->
+        <path d="M 49,55 A 24,24 0 1 1 49,21"
+          stroke="white" stroke-width="3.5" fill="none" stroke-linecap="square"/>
+
+        <!-- G crossbar — extends beyond the circle for impact -->
+        <line x1="32" y1="38" x2="60" y2="38"
+          stroke="#D8C6A8" stroke-width="3.5" stroke-linecap="square"/>
+
+        <!-- Sep -->
+        <line x1="80" y1="12" x2="80" y2="68" stroke="rgba(216,198,168,0.2)" stroke-width="0.8"/>
+
+        <text x="92" y="36" font-family="'Instrument Serif',serif"
+          font-size="22" fill="white" letter-spacing="4">MATHEUS</text>
+        <text x="92" y="58" font-family="'Instrument Serif',serif"
+          font-size="22" fill="#D8C6A8" letter-spacing="2.5">GIOVANNE</text>
+        <line x1="92" y1="64" x2="258" y2="64" stroke="rgba(216,198,168,0.2)" stroke-width="0.6"/>
+        <text x="92" y="72" font-family="'Inter',sans-serif"
+          font-size="6.5" fill="rgba(216,198,168,0.4)" letter-spacing="5.5">ADVOGADO</text>
+      </svg>
+      <span class="swatch-lbl">Fundo escuro</span>
+    </div>
+
+    <!-- LIGHT -->
+    <div class="swatch-light">
+      <svg viewBox="0 0 260 80" width="260">
+        <path d="M 49,55 A 24,24 0 1 1 49,21"
+          stroke="#1C2B48" stroke-width="3.5" fill="none" stroke-linecap="square"/>
+        <line x1="32" y1="38" x2="60" y2="38"
+          stroke="#D8C6A8" stroke-width="3.5" stroke-linecap="square"/>
+        <line x1="80" y1="12" x2="80" y2="68" stroke="rgba(28,43,72,0.15)" stroke-width="0.8"/>
+        <text x="92" y="36" font-family="'Instrument Serif',serif"
+          font-size="22" fill="#1C2B48" letter-spacing="4">MATHEUS</text>
+        <text x="92" y="58" font-family="'Instrument Serif',serif"
+          font-size="22" fill="#D8C6A8" letter-spacing="2.5">GIOVANNE</text>
+        <line x1="92" y1="64" x2="258" y2="64" stroke="rgba(28,43,72,0.12)" stroke-width="0.6"/>
+        <text x="92" y="72" font-family="'Inter',sans-serif"
+          font-size="6.5" fill="rgba(28,43,72,0.3)" letter-spacing="5.5">ADVOGADO</text>
+      </svg>
+      <span class="swatch-lbl">Fundo claro</span>
+    </div>
+  </div>
+
+  <p class="concept-rationale">
+    O "G" — inicial do sobrenome — redesenhado com geometria bold. O arco aberto é o
+    <strong>compromisso em movimento</strong>, sempre em busca de conclusão. A barra transversal em champagne
+    que ultrapassa o círculo representa <strong>ir além do esperado</strong> — entrega e confiança. 
+    Traços quadrados e proporções fortes transmitem <strong>modernidade e segurança</strong>.
+  </p>
+</div>
+
+<hr>
+
+<!-- ══════════════════════════════════════════════════════
+     CONCEITO C — WORDMARK SERIFADO EDITORIAL
+════════════════════════════════════════════════════════ -->
+<div class="concept">
+  <div class="concept-meta">
+    <span class="concept-num">C</span>
+    <span class="concept-title">Wordmark Editorial</span>
+    <div class="concept-values">
+      <span class="tag">Autoridade</span>
+      <span class="tag">Confiança</span>
+      <span class="tag">Refinado</span>
+    </div>
+  </div>
+
+  <div class="concept-row">
+    <!-- DARK -->
+    <div class="swatch-dark">
+      <svg viewBox="0 0 270 82" width="270">
+        <!-- Accent champagne bar topo -->
+        <rect x="0" y="0" width="4" height="72" fill="#D8C6A8"/>
+
+        <!-- MATHEUS: grande, peso, itálico -->
+        <text x="16" y="40"
+          font-family="'Cormorant Garamond','Instrument Serif',Georgia,serif"
+          font-size="40" fill="white" letter-spacing="1"
+          font-style="italic" font-weight="300">Matheus</text>
+
+        <!-- Divisor champagne bold -->
+        <rect x="16" y="46" width="252" height="1.8" fill="rgba(216,198,168,0.5)"/>
+
+        <!-- GIOVANNE: sans, tracked, menor -->
+        <text x="17" y="60"
+          font-family="'Inter',sans-serif"
+          font-size="10" fill="#D8C6A8"
+          letter-spacing="9" font-weight="300">GIOVANNE</text>
+
+        <!-- ADVOGADO: ainda menor, à direita -->
+        <text x="17" y="74"
+          font-family="'Inter',sans-serif"
+          font-size="7" fill="rgba(255,255,255,0.28)"
+          letter-spacing="6" font-weight="300">ADVOGADO</text>
+      </svg>
+      <span class="swatch-lbl">Fundo escuro</span>
+    </div>
+
+    <!-- LIGHT -->
+    <div class="swatch-light">
+      <svg viewBox="0 0 270 82" width="270">
+        <rect x="0" y="0" width="4" height="72" fill="#D8C6A8"/>
+        <text x="16" y="40"
+          font-family="'Cormorant Garamond','Instrument Serif',Georgia,serif"
+          font-size="40" fill="#1C2B48" letter-spacing="1"
+          font-style="italic" font-weight="300">Matheus</text>
+        <rect x="16" y="46" width="252" height="1.8" fill="rgba(216,198,168,0.7)"/>
+        <text x="17" y="60"
+          font-family="'Inter',sans-serif"
+          font-size="10" fill="#5C6880"
+          letter-spacing="9" font-weight="300">GIOVANNE</text>
+        <text x="17" y="74"
+          font-family="'Inter',sans-serif"
+          font-size="7" fill="rgba(28,43,72,0.3)"
+          letter-spacing="6" font-weight="300">ADVOGADO</text>
+      </svg>
+      <span class="swatch-lbl">Fundo claro</span>
+    </div>
+  </div>
+
+  <p class="concept-rationale">
+    Sem símbolo — a tipografia <em>é</em> a marca. "Matheus" em serifado itálico largo transmite
+    <strong>personalidade, presença e comprometimento pessoal</strong>. A barra vertical champagne à esquerda
+    é a âncora visual: <strong>estabilidade, limite claro, confiança</strong>. A linha champagne
+    horizontal separa os dois registros (pessoal e profissional) com <strong>precisão moderna</strong>.
+  </p>
+</div>
+
+<!-- footer -->
+<p style="font-size:10px;color:rgba(255,255,255,0.14);letter-spacing:.12em;text-align:center;margin-top:20px;">
+  Todos os conceitos usam as fontes e cores já presentes no site · Implementação imediata
+</p>
+
+</body>
+</html>

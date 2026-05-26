@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Concepts Vol.2 — Matheus Giovanne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1C2B48;
+    --navy-deep: #0F1624;
+    --champagne: #D8C6A8;
+    --offwhite: #F4F1EB;
+  }
+  body {
+    background: var(--navy-deep);
+    font-family: 'Inter', sans-serif;
+    color: white;
+    padding: 48px 32px 80px;
+  }
+  .header { margin-bottom: 52px; }
+  .header h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--champagne);
+    letter-spacing: 0.04em;
+  }
+  .header p {
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 2px;
+    border: 1px solid rgba(216,198,168,0.1);
+  }
+  .card { background: rgba(255,255,255,0.02); }
+  .card-label {
+    padding: 10px 18px;
+    border-bottom: 1px solid rgba(216,198,168,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-label span:first-child {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--champagne);
+    opacity: 0.6;
+  }
+  .card-label span:last-child {
+    font-size: 10px;
+    color: rgba(255,255,255,0.35);
+  }
+  .previews { display: grid; grid-template-columns: 1fr 1fr; }
+  .on-dark {
+    background: var(--navy);
+    display: flex; align-items: center; justify-content: center;
+    padding: 36px 28px; min-height: 150px;
+  }
+  .on-light {
+    background: var(--offwhite);
+    display: flex; align-items: center; justify-content: center;
+    padding: 36px 28px; min-height: 150px;
+  }
+  svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Mais Ideias de Logo</h1>
+  <p>Matheus Giovanne · Vol. 2 · 6 novos conceitos</p>
+</div>
+
+<div class="grid">
+
+  <!-- 06 — ESCUDO GEOMÉTRICO -->
+  <div class="card">
+    <div class="card-label">
+      <span>Conceito 06</span>
+      <span>Escudo minimal — proteção, confiança</span>
+    </div>
+    <div class="previews">
+      <div class="on-dark">
+        <svg viewBox="0 0 210 70" width="210">
+          <!-- Shield outline -->
+          <path d="M 32,6 L 58,6 L 58,38 Q 58,56 45,64 Q 32,56 32,38 Z"
+            fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+          <!-- Inner accent line -->
+          <path d="M 37,12 L 53,12 L 53,38 Q 53,50 45,57 Q 37,50 37,38 Z"
+            fill="none" stroke="#D8C6A8" stroke-width="0.8" stroke-linejoin="round" opacity="0.5"/>
+          <!-- Small dot center -->
+          <circle cx="45" cy="34" r="3" fill="#D8C6A8"/>
+          <!-- Sep -->
+          <line x1="74" y1="12" x2="74" y2="58" stroke="rgba(216,198,168,0.2)" stroke-width="0.8"/>
+          <!-- Name -->
+          <text x="86" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="white" letter-spacing="3.5">MATHEUS</text>
+          <text x="86" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="86" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(216,198,168,0.4)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+      <div class="on-light">
+        <svg viewBox="0 0 210 70" width="210">
+          <path d="M 32,6 L 58,6 L 58,38 Q 58,56 45,64 Q 32,56 32,38 Z"
+            fill="none" stroke="#1C2B48" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M 37,12 L 53,12 L 53,38 Q 53,50 45,57 Q 37,50 37,38 Z"
+            fill="none" stroke="#D8C6A8" stroke-width="0.8" stroke-linejoin="round" opacity="0.7"/>
+          <circle cx="45" cy="34" r="3" fill="#D8C6A8"/>
+          <line x1="74" y1="12" x2="74" y2="58" stroke="rgba(28,43,72,0.15)" stroke-width="0.8"/>
+          <text x="86" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="#1C2B48" letter-spacing="3.5">MATHEUS</text>
+          <text x="86" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="86" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(28,43,72,0.3)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07 — ASSINATURA + SUBLINHA -->
+  <div class="card">
+    <div class="card-label">
+      <span>Conceito 07</span>
+      <span>Assinatura serifada — pessoal, sofisticado</span>
+    </div>
+    <div class="previews">
+      <div class="on-dark">
+        <svg viewBox="0 0 220 72" width="220">
+          <!-- Italic serif wordmark -->
+          <text x="4" y="42" font-family="'Cormorant Garamond','Instrument Serif',Georgia,serif"
+            font-size="38" fill="white" letter-spacing="1" font-style="italic" font-weight="300">Matheus</text>
+          <!-- Champagne underline -->
+          <rect x="4" y="48" width="176" height="1.5" fill="#D8C6A8"/>
+          <!-- Giovanne small aligned right -->
+          <text x="6" y="62" font-family="'Inter',sans-serif" font-size="9" fill="rgba(216,198,168,0.7)"
+            letter-spacing="7" font-weight="300">GIOVANNE · ADVOGADO</text>
+        </svg>
+      </div>
+      <div class="on-light">
+        <svg viewBox="0 0 220 72" width="220">
+          <text x="4" y="42" font-family="'Cormorant Garamond','Instrument Serif',Georgia,serif"
+            font-size="38" fill="#1C2B48" letter-spacing="1" font-style="italic" font-weight="300">Matheus</text>
+          <rect x="4" y="48" width="176" height="1.5" fill="#D8C6A8"/>
+          <text x="6" y="62" font-family="'Inter',sans-serif" font-size="9" fill="rgba(28,43,72,0.5)"
+            letter-spacing="7" font-weight="300">GIOVANNE · ADVOGADO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- 08 — DOIS QUADRADOS (EQUILÍBRIO MODERNO) -->
+  <div class="card">
+    <div class="card-label">
+      <span>Conceito 08</span>
+      <span>Dois blocos — equilíbrio, justiça abstrata</span>
+    </div>
+    <div class="previews">
+      <div class="on-dark">
+        <svg viewBox="0 0 210 70" width="210">
+          <!-- Left square solid -->
+          <rect x="6" y="14" width="24" height="24" fill="#D8C6A8"/>
+          <!-- Right square outline, offset down -->
+          <rect x="34" y="28" width="24" height="24" fill="none" stroke="white" stroke-width="2"/>
+          <!-- Thin connecting line -->
+          <line x1="30" y1="26" x2="34" y2="28" stroke="rgba(216,198,168,0.5)" stroke-width="1"/>
+
+          <!-- Sep -->
+          <line x1="72" y1="10" x2="72" y2="60" stroke="rgba(216,198,168,0.2)" stroke-width="0.8"/>
+          <text x="84" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="white" letter-spacing="3.5">MATHEUS</text>
+          <text x="84" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="84" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(216,198,168,0.4)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+      <div class="on-light">
+        <svg viewBox="0 0 210 70" width="210">
+          <rect x="6" y="14" width="24" height="24" fill="#D8C6A8"/>
+          <rect x="34" y="28" width="24" height="24" fill="none" stroke="#1C2B48" stroke-width="2"/>
+          <line x1="30" y1="26" x2="34" y2="28" stroke="rgba(28,43,72,0.3)" stroke-width="1"/>
+          <line x1="72" y1="10" x2="72" y2="60" stroke="rgba(28,43,72,0.15)" stroke-width="0.8"/>
+          <text x="84" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="#1C2B48" letter-spacing="3.5">MATHEUS</text>
+          <text x="84" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="84" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(28,43,72,0.3)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- 09 — ARCO / BOW TIE -->
+  <div class="card">
+    <div class="card-label">
+      <span>Conceito 09</span>
+      <span>Arco duplo — equilíbrio dinâmico, ousado</span>
+    </div>
+    <div class="previews">
+      <div class="on-dark">
+        <svg viewBox="0 0 210 70" width="210">
+          <!-- Two mirrored arcs forming a bowtie / infinity-like mark -->
+          <!-- Left arc: large open curve -->
+          <path d="M 8,10 Q 44,35 8,60" fill="none" stroke="#D8C6A8" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Right arc -->
+          <path d="M 56,10 Q 20,35 56,60" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Center dot -->
+          <circle cx="32" cy="35" r="3.5" fill="#D8C6A8"/>
+          <!-- Thin cross lines at center -->
+          <line x1="24" y1="35" x2="40" y2="35" stroke="rgba(255,255,255,0.3)" stroke-width="0.8"/>
+
+          <line x1="72" y1="10" x2="72" y2="60" stroke="rgba(216,198,168,0.2)" stroke-width="0.8"/>
+          <text x="84" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="white" letter-spacing="3.5">MATHEUS</text>
+          <text x="84" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="84" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(216,198,168,0.4)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+      <div class="on-light">
+        <svg viewBox="0 0 210 70" width="210">
+          <path d="M 8,10 Q 44,35 8,60" fill="none" stroke="#D8C6A8" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M 56,10 Q 20,35 56,60" fill="none" stroke="#1C2B48" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="32" cy="35" r="3.5" fill="#D8C6A8"/>
+          <line x1="24" y1="35" x2="40" y2="35" stroke="rgba(28,43,72,0.2)" stroke-width="0.8"/>
+          <line x1="72" y1="10" x2="72" y2="60" stroke="rgba(28,43,72,0.15)" stroke-width="0.8"/>
+          <text x="84" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="#1C2B48" letter-spacing="3.5">MATHEUS</text>
+          <text x="84" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="84" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(28,43,72,0.3)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 — LINHA + INICIAL SERIFADA -->
+  <div class="card">
+    <div class="card-label">
+      <span>Conceito 10</span>
+      <span>Inicial "M" serifada grande — impacto imediato</span>
+    </div>
+    <div class="previews">
+      <div class="on-dark">
+        <svg viewBox="0 0 220 70" width="220">
+          <!-- Big M with champagne color block -->
+          <rect x="0" y="0" width="60" height="70" fill="rgba(216,198,168,0.08)"/>
+          <text x="8" y="56" font-family="'DM Serif Display','Playfair Display','Instrument Serif',serif"
+            font-size="56" fill="#D8C6A8" font-weight="400" letter-spacing="-2">M</text>
+          <!-- Small G beside -->
+          <text x="42" y="34" font-family="'Instrument Serif',serif" font-size="13" fill="rgba(255,255,255,0.4)" letter-spacing="0">G</text>
+
+          <!-- Sep: champagne vertical -->
+          <line x1="70" y1="8" x2="70" y2="62" stroke="rgba(216,198,168,0.25)" stroke-width="1"/>
+
+          <text x="82" y="29" font-family="'Instrument Serif',serif" font-size="17" fill="white" letter-spacing="4">MATHEUS</text>
+          <text x="82" y="50" font-family="'Instrument Serif',serif" font-size="17" fill="#D8C6A8" letter-spacing="2.5">GIOVANNE</text>
+          <text x="82" y="62" font-family="'Inter',sans-serif" font-size="6" fill="rgba(216,198,168,0.4)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+      <div class="on-light">
+        <svg viewBox="0 0 220 70" width="220">
+          <rect x="0" y="0" width="60" height="70" fill="#1C2B48" opacity="0.07"/>
+          <text x="8" y="56" font-family="'DM Serif Display','Playfair Display','Instrument Serif',serif"
+            font-size="56" fill="#1C2B48" font-weight="400" letter-spacing="-2">M</text>
+          <text x="42" y="34" font-family="'Instrument Serif',serif" font-size="13" fill="rgba(28,43,72,0.3)" letter-spacing="0">G</text>
+          <line x1="70" y1="8" x2="70" y2="62" stroke="rgba(28,43,72,0.15)" stroke-width="1"/>
+          <text x="82" y="29" font-family="'Instrument Serif',serif" font-size="17" fill="#1C2B48" letter-spacing="4">MATHEUS</text>
+          <text x="82" y="50" font-family="'Instrument Serif',serif" font-size="17" fill="#D8C6A8" letter-spacing="2.5">GIOVANNE</text>
+          <text x="82" y="62" font-family="'Inter',sans-serif" font-size="6" fill="rgba(28,43,72,0.3)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11 — TRÊS LINHAS HORIZONTAIS (ESTRATO) -->
+  <div class="card">
+    <div class="card-label">
+      <span>Conceito 11</span>
+      <span>Linhas estratificadas — seriedade, ordem, lei</span>
+    </div>
+    <div class="previews">
+      <div class="on-dark">
+        <svg viewBox="0 0 210 70" width="210">
+          <!-- Three horizontal bars, different widths, like hierarchy -->
+          <rect x="4" y="14" width="52" height="5" fill="#D8C6A8"/>
+          <rect x="4" y="26" width="40" height="5" fill="white" opacity="0.85"/>
+          <rect x="4" y="38" width="28" height="5" fill="white" opacity="0.4"/>
+          <!-- Right accent dot -->
+          <circle cx="62" cy="41" r="3" fill="#D8C6A8" opacity="0.6"/>
+
+          <line x1="76" y1="10" x2="76" y2="60" stroke="rgba(216,198,168,0.2)" stroke-width="0.8"/>
+          <text x="88" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="white" letter-spacing="3.5">MATHEUS</text>
+          <text x="88" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="88" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(216,198,168,0.4)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+      <div class="on-light">
+        <svg viewBox="0 0 210 70" width="210">
+          <rect x="4" y="14" width="52" height="5" fill="#D8C6A8"/>
+          <rect x="4" y="26" width="40" height="5" fill="#1C2B48" opacity="0.8"/>
+          <rect x="4" y="38" width="28" height="5" fill="#1C2B48" opacity="0.3"/>
+          <circle cx="62" cy="41" r="3" fill="#D8C6A8" opacity="0.8"/>
+          <line x1="76" y1="10" x2="76" y2="60" stroke="rgba(28,43,72,0.15)" stroke-width="0.8"/>
+          <text x="88" y="30" font-family="'Instrument Serif',serif" font-size="18" fill="#1C2B48" letter-spacing="3.5">MATHEUS</text>
+          <text x="88" y="51" font-family="'Instrument Serif',serif" font-size="18" fill="#D8C6A8" letter-spacing="2">GIOVANNE</text>
+          <text x="88" y="63" font-family="'Inter',sans-serif" font-size="6" fill="rgba(28,43,72,0.3)" letter-spacing="5">ADVOGADO</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:40px;font-size:10px;color:rgba(255,255,255,0.18);letter-spacing:0.12em;text-align:center;">
+  VOL. 1 tem mais 5 conceitos · Todos usam as cores e tipografias já no site
+</p>
+
+</body>
+</html>

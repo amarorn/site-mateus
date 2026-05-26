@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+    --primary: 220 43% 19%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 36 28% 76%;
+    --secondary-foreground: 220 43% 19%;
+    --muted: 36 14% 93%;
+    --muted-foreground: 220 12% 43%;
+    --accent: 36 28% 76%;
+    --accent-foreground: 220 43% 19%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 14% 88%;
+    --input: 36 14% 88%;
+    --ring: 36 28% 76%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-navy-deep text-white font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    background-color: rgba(216, 198, 168, 0.3);
+    color: #1C2B48;
+  }
+}
+
+@layer components {
+  .label-uppercase {
+    @apply text-[11px] md:text-xs font-sans font-medium uppercase tracking-[0.12em];
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-3.5 bg-champagne text-navy font-sans text-xs md:text-sm font-medium uppercase tracking-wider rounded-full transition-all duration-300 hover:bg-champagne-light hover:shadow-[0_4px_20px_rgba(216,198,168,0.3)];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-3.5 border border-white/40 text-white font-sans text-xs md:text-sm font-medium uppercase tracking-wider rounded-full transition-all duration-300 hover:border-white hover:text-champagne;
+  }
+
+  .btn-outline-champagne {
+    @apply inline-flex items-center justify-center px-6 py-2.5 border border-champagne text-champagne font-sans text-xs font-medium uppercase tracking-wider rounded-full transition-all duration-300 hover:bg-champagne hover:text-navy;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .content-max {
+    @apply max-w-[1280px] mx-auto px-5 md:px-10 lg:px-16;
+  }
+}
