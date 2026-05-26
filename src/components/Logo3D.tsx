@@ -6,8 +6,6 @@ export function Logo3D() {
       <div className="logo-3d-stage">
         <div className="logo-3d-halo" />
         <div className="logo-3d-card">
-          <div className="logo-3d-glass" />
-          <div className="logo-3d-grid" />
           <LogoMark variant="dark" className="logo-3d-mark logo-3d-depth-1" />
           <LogoMark variant="dark" className="logo-3d-mark logo-3d-depth-2" />
           <LogoMark variant="dark" className="logo-3d-mark logo-3d-depth-3" />
@@ -37,43 +35,10 @@ export function Logo3D() {
         .logo-3d-card {
           position: absolute;
           inset: 10%;
-          border-radius: 34px;
           transform-style: preserve-3d;
           transform: rotateX(58deg) rotateZ(-18deg);
           animation: logoGlassTurn 10s ease-in-out infinite;
-          border: 1px solid rgba(216,198,168,0.25);
-          background:
-            linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.025)),
-            linear-gradient(180deg, rgba(28,43,72,0.16), rgba(13,21,37,0.34));
-          box-shadow:
-            inset 0 1px 0 rgba(255,255,255,0.28),
-            inset 0 -20px 60px rgba(216,198,168,0.05),
-            0 42px 90px rgba(0,0,0,0.34);
-          backdrop-filter: blur(14px);
-          overflow: hidden;
-        }
-
-        .logo-3d-glass {
-          position: absolute;
-          inset: 0;
-          border-radius: inherit;
-          background:
-            radial-gradient(circle at 28% 22%, rgba(255,255,255,0.28), transparent 28%),
-            linear-gradient(120deg, transparent 18%, rgba(255,255,255,0.22) 34%, transparent 47%);
-          opacity: 0.72;
-          transform: translateZ(18px);
-        }
-
-        .logo-3d-grid {
-          position: absolute;
-          inset: 12%;
-          border-radius: 24px;
-          opacity: 0.18;
-          background:
-            linear-gradient(rgba(216,198,168,0.35) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(216,198,168,0.35) 1px, transparent 1px);
-          background-size: 34px 34px;
-          transform: translateZ(12px);
+          background: transparent;
         }
 
         .logo-3d-mark {
@@ -87,23 +52,26 @@ export function Logo3D() {
         }
 
         .logo-3d-depth-1 {
-          opacity: 0.12;
-          transform: translateZ(22px) translate(10px, 10px);
+          opacity: 0.1;
+          transform: translateZ(18px) translate(12px, 12px);
         }
 
         .logo-3d-depth-2 {
           opacity: 0.18;
-          transform: translateZ(34px) translate(6px, 6px);
+          transform: translateZ(32px) translate(8px, 8px);
         }
 
         .logo-3d-depth-3 {
-          opacity: 0.26;
-          transform: translateZ(46px) translate(3px, 3px);
+          opacity: 0.28;
+          transform: translateZ(48px) translate(4px, 4px);
         }
 
         .logo-3d-main {
           opacity: 0.98;
-          transform: translateZ(64px);
+          transform: translateZ(72px);
+          filter:
+            drop-shadow(0 10px 16px rgba(0,0,0,0.32))
+            drop-shadow(0 0 18px rgba(216,198,168,0.18));
         }
 
         .logo-3d-main .logo-m,
@@ -130,11 +98,11 @@ export function Logo3D() {
         .logo-3d-line {
           position: absolute;
           height: 1px;
-          width: 72%;
-          left: 14%;
+          width: 54%;
+          left: 23%;
           background: linear-gradient(90deg, transparent, rgba(216,198,168,0.7), transparent);
-          transform: translateZ(72px);
-          opacity: 0.45;
+          transform: translateZ(82px);
+          opacity: 0.3;
         }
 
         .logo-3d-line-a {

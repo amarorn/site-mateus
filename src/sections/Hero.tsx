@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ParticleCanvas } from '../components/ParticleCanvas';
 import { LogoMark } from '../components/Logo';
-import { Logo3D } from '../components/Logo3D';
+import { LogoKineticMark } from '../components/LogoKineticMark';
 import gsap from 'gsap';
 
 export function Hero() {
@@ -132,8 +132,8 @@ export function Hero() {
           />
         </div>
       </div>
-      <div className="absolute right-[4%] top-[22%] hidden 2xl:block z-[2]">
-        <Logo3D />
+      <div className="absolute right-[7%] top-[26%] hidden 2xl:block z-[2]">
+        <LogoKineticMark />
       </div>
       <div className="absolute left-0 bottom-0 w-full h-44 bg-gradient-to-t from-navy-deep via-navy-deep/50 to-transparent pointer-events-none" />
 
