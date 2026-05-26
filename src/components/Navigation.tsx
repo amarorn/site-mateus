@@ -1,4 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
 
@@ -14,6 +15,8 @@ export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('#hero');
   const [scrollProgress, setScrollProgress] = useState(0);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,15 +42,24 @@ export function Navigation() {
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   const scrollTo = useCallback((href: string) => {
     setMobileOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/');
+      window.setTimeout(() => {
+        const el = document.querySelector(href);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 80);
+      return;
+    }
+
     const el = document.querySelector(href);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  }, []);
+  }, [location.pathname, navigate]);
 
   return (
     <>
@@ -92,6 +104,26 @@ export function Navigation() {
               {link.label}
             </button>
           ))}
+          <Link
+            to="/areas"
+            className={`relative rounded-full px-5 py-2.5 font-sans text-[12px] font-medium tracking-[0.12em] uppercase transition-all duration-300 ${
+              location.pathname.startsWith('/areas')
+                ? 'text-navy bg-champagne shadow-[0_8px_22px_rgba(216,198,168,0.18)]'
+                : 'text-white/78 hover:text-champagne hover:bg-white/[0.04]'
+            }`}
+          >
+            Áreas
+          </Link>
+          <Link
+            to="/artigos"
+            className={`relative rounded-full px-5 py-2.5 font-sans text-[12px] font-medium tracking-[0.12em] uppercase transition-all duration-300 ${
+              location.pathname.startsWith('/artigos')
+                ? 'text-navy bg-champagne shadow-[0_8px_22px_rgba(216,198,168,0.18)]'
+                : 'text-white/78 hover:text-champagne hover:bg-white/[0.04]'
+            }`}
+          >
+            Conteúdo
+          </Link>
         </div>
 
         {/* Desktop CTA */}
@@ -99,7 +131,7 @@ export function Navigation() {
           onClick={() => scrollTo('#contato')}
           className="hidden lg:inline-flex btn-outline-champagne"
         >
-          Agendar uma conversa
+          Falar com Matheus
         </button>
 
         {/* Mobile hamburger */}
@@ -152,7 +184,7 @@ export function Navigation() {
                 animation: `fadeSlideIn 0.4s ease ${NAV_LINKS.length * 0.08}s both`,
               }}
             >
-              Agendar uma conversa
+              Falar com Matheus
             </button>
           </div>
         </div>

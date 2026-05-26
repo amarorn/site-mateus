@@ -170,7 +170,7 @@ export function Hero() {
                 onClick={() => scrollTo('#contato')}
                 className="hero-cta btn-primary pointer-events-auto opacity-0"
               >
-                Agendar uma conversa
+                Falar com Matheus
               </button>
               <button
                 onClick={() => scrollTo('#areas')}
@@ -209,7 +209,7 @@ export function Hero() {
         {/* Trust Seal */}
         <div className="hero-seal absolute bottom-6 right-5 md:right-10 lg:right-16 opacity-0">
           <span className="label-uppercase text-white/40">
-            OAB/SP 125.847 | Desde 2008
+            Atendimento no RN | Desde 2008
           </span>
         </div>
       </div>

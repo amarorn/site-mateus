@@ -5,12 +5,12 @@ const DESTAQUES = [
   {
     icon: GraduationCap,
     label: 'Formação',
-    value: 'Direito — USP',
+    value: 'Direito',
   },
   {
     icon: Award,
     label: 'Registro',
-    value: 'OAB/SP 125.847',
+    value: 'Registro OAB',
   },
   {
     icon: BookOpen,

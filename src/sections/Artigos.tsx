@@ -1,57 +1,12 @@
 import { Clock, Calendar, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
-interface Article {
-  title: string;
-  excerpt: string;
-  category: string;
-  readTime: string;
-  date: string;
-  image: string;
-}
-
-const ARTICLES: Article[] = [
-  {
-    title: 'Quando procurar orientação jurídica preventiva?',
-    excerpt:
-      'A prevenção de conflitos jurídicos pode evitar custos elevados e prolongados. Entenda quando consultar um advogado antes que problemas surjam.',
-    category: 'Direito Civil',
-    readTime: '5 min',
-    date: '15 Jan 2026',
-    image: `${import.meta.env.BASE_URL}images/articles/prevention.jpg`,
-  },
-  {
-    title: 'Cuidados antes de assinar um contrato',
-    excerpt:
-      'Cláusulas, prazos, rescisão e garantias: elementos essenciais que devem ser revisados com atenção em qualquer acordo.',
-    category: 'Contratos',
-    readTime: '7 min',
-    date: '8 Jan 2026',
-    image: `${import.meta.env.BASE_URL}images/articles/contracts.jpg`,
-  },
-  {
-    title: 'Como organizar documentos antes de uma consulta jurídica',
-    excerpt:
-      'Uma documentação bem organizada agiliza a análise do caso e permite um atendimento mais preciso e completo.',
-    category: 'Empresarial',
-    readTime: '4 min',
-    date: '20 Dez 2025',
-    image: `${import.meta.env.BASE_URL}images/articles/documents.jpg`,
-  },
-  {
-    title: 'Diferença entre atuação consultiva e contenciosa',
-    excerpt:
-      'Entenda as distinções entre a assessoria jurídica preventiva e a representação em processos judiciais ou administrativos.',
-    category: 'Família',
-    readTime: '6 min',
-    date: '10 Dez 2025',
-    image: `${import.meta.env.BASE_URL}images/articles/consultation.jpg`,
-  },
-];
+import { articles as ARTICLES } from '../data/content';
 
 export function Artigos() {
   const headerRef = useScrollReveal<HTMLDivElement>();
-  const featuredRef = useScrollReveal<HTMLDivElement>({ y: 30 });
+  const featuredRef = useScrollReveal<HTMLAnchorElement>({ y: 30 });
   const listRef = useScrollReveal<HTMLDivElement>({
     childSelector: '.article-side',
     stagger: 0.1,
@@ -84,7 +39,7 @@ export function Artigos() {
         {/* Editorial Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8 lg:gap-10 items-start">
           {/* Featured Article */}
-          <article ref={featuredRef} className="group cursor-pointer">
+          <Link to={`/artigos/${featured.slug}`} ref={featuredRef} className="group cursor-pointer block">
             <div className="overflow-hidden rounded">
               <img
                 src={featured.image}
@@ -124,13 +79,14 @@ export function Artigos() {
                 />
               </span>
             </div>
-          </article>
+          </Link>
 
           {/* Side Articles */}
           <div ref={listRef} className="flex flex-col divide-y divide-slate/10">
             {rest.map((article) => (
-              <article
+              <Link
                 key={article.title}
+                to={`/artigos/${article.slug}`}
                 className="article-side group cursor-pointer py-6 first:pt-0 last:pb-0 flex gap-4"
               >
                 <div className="overflow-hidden rounded flex-shrink-0 w-[88px] h-[72px]">
@@ -159,7 +115,7 @@ export function Artigos() {
                     </span>
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>

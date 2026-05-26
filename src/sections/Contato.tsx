@@ -27,8 +27,8 @@ const CONTACT_METHODS = [
   {
     icon: MapPin,
     label: 'Endereço',
-    value: 'Av. Paulista, 1000, Suite 1501 — Bela Vista, São Paulo/SP',
-    href: 'https://maps.google.com/?q=Av.+Paulista,+1000,+São+Paulo',
+    value: 'Atendimento no Rio Grande do Norte e online',
+    href: undefined,
   },
   {
     icon: Clock,

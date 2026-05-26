@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router';
 import { Logo } from '../components/Logo';
 
 function RibbonCanvas() {
@@ -180,8 +181,10 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Logo variant="dark" stacked className="h-20 w-auto" />
-            <p className="font-sans text-slate text-sm mt-4">OAB/SP 125.847</p>
-            <p className="font-sans text-slate text-sm">São Paulo/SP</p>
+            <p className="font-sans text-slate text-sm mt-4">Registro OAB</p>
+            <p className="font-sans text-slate text-sm">
+              Rio Grande do Norte | Online
+            </p>
           </div>
 
           {/* Navigation */}
@@ -206,6 +209,22 @@ export function Footer() {
                   </button>
                 </li>
               ))}
+              <li>
+                <Link
+                  to="/areas"
+                  className="font-sans text-slate text-sm hover:text-white transition-colors duration-200"
+                >
+                  Todas as áreas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/artigos"
+                  className="font-sans text-slate text-sm hover:text-white transition-colors duration-200"
+                >
+                  Todos os artigos
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -237,19 +256,25 @@ export function Footer() {
             </h4>
             <ul className="flex flex-col gap-2.5">
               <li>
-                <span className="font-sans text-slate text-sm cursor-pointer hover:text-white transition-colors">
+                <Link
+                  to="/privacidade"
+                  className="font-sans text-slate text-sm cursor-pointer hover:text-white transition-colors"
+                >
                   Política de Privacidade
-                </span>
+                </Link>
               </li>
               <li>
-                <span className="font-sans text-slate text-sm cursor-pointer hover:text-white transition-colors">
+                <Link
+                  to="/termos"
+                  className="font-sans text-slate text-sm cursor-pointer hover:text-white transition-colors"
+                >
                   Termos de Uso
-                </span>
+                </Link>
               </li>
             </ul>
             <p className="font-sans text-slate/50 text-[11px] leading-relaxed mt-4 max-w-[280px]">
-              Conteúdo de caráter meramente informativo, nos termos das normas
-              éticas aplicáveis à advocacia.
+              As informações deste site têm caráter informativo e não
+              substituem consulta jurídica individual.
             </p>
           </div>
         </div>
