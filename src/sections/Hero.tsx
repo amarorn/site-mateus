@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ParticleCanvas } from '../components/ParticleCanvas';
 import { LogoMark } from '../components/Logo';
+import { Logo3D } from '../components/Logo3D';
 import gsap from 'gsap';
 
 export function Hero() {
@@ -130,6 +131,9 @@ export function Hero() {
             className="hero-logo-watermark absolute top-1/2 left-1/2 w-[210px] h-[210px] -translate-x-1/2 -translate-y-1/2 opacity-[0.085]"
           />
         </div>
+      </div>
+      <div className="absolute right-[4%] top-[22%] hidden 2xl:block z-[2]">
+        <Logo3D />
       </div>
       <div className="absolute left-0 bottom-0 w-full h-44 bg-gradient-to-t from-navy-deep via-navy-deep/50 to-transparent pointer-events-none" />
 

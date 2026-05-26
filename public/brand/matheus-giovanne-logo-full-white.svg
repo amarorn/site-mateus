@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 178" role="img" aria-label="Matheus Giovanne Advogado">
+  <title>Matheus Giovanne Advogado</title>
+  <g transform="translate(0 0)">
+    <path d="M 10 98 L 10 60 L 28 90 L 46 60 L 46 98" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 68 64 C 48 64 48 98 70 98 L 84 98 L 84 85 L 72 85" fill="none" stroke="#D8C6A8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 9 110 C 34 106 58 106 88 110" fill="none" stroke="#D8C6A8" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="88" cy="110" r="4" fill="#FFFFFF"/>
+  </g>
+  <line x1="128" y1="44" x2="128" y2="128" stroke="rgba(216,198,168,0.35)" stroke-width="1"/>
+  <text x="158" y="79" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#FFFFFF" letter-spacing="7">MATHEUS</text>
+  <text x="158" y="121" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#D8C6A8" letter-spacing="4.5">GIOVANNE</text>
+  <line x1="158" y1="136" x2="548" y2="136" stroke="rgba(216,198,168,0.35)" stroke-width="1"/>
+  <text x="158" y="155" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="rgba(216,198,168,0.6)" letter-spacing="10">ADVOGADO</text>
+</svg>
