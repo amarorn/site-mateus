@@ -125,7 +125,7 @@ export const articles = [
     category: 'Direito Civil',
     readTime: '5 min',
     date: '15 Jan 2026',
-    image: `${import.meta.env.BASE_URL}images/articles/prevention.jpg`,
+    image: `${import.meta.env.BASE_URL}images/editorial/abstract-balance.jpg`,
     content: [
       'A orientação jurídica preventiva é indicada sempre que uma decisão puder gerar efeitos patrimoniais, familiares, profissionais ou empresariais relevantes.',
       'Contratos, negociações, mudanças societárias, acordos familiares e cobranças são exemplos de situações em que a análise prévia ajuda a evitar litígios e reduzir riscos.',
@@ -140,7 +140,7 @@ export const articles = [
     category: 'Contratos',
     readTime: '7 min',
     date: '8 Jan 2026',
-    image: `${import.meta.env.BASE_URL}images/articles/contracts.jpg`,
+    image: `${import.meta.env.BASE_URL}images/editorial/legal-book.jpg`,
     content: [
       'Antes de assinar um contrato, é essencial compreender obrigações, prazos, multas, hipóteses de rescisão, garantias e consequências do descumprimento.',
       'Muitos conflitos surgem porque as partes assinam documentos sem avaliar riscos ocultos ou cláusulas pouco claras.',
@@ -155,7 +155,7 @@ export const articles = [
     category: 'Empresarial',
     readTime: '4 min',
     date: '20 Dez 2025',
-    image: `${import.meta.env.BASE_URL}images/articles/documents.jpg`,
+    image: `${import.meta.env.BASE_URL}images/editorial/contract-stack.jpg`,
     content: [
       'Separar contratos, comprovantes, mensagens, notificações e documentos pessoais facilita uma análise jurídica mais precisa.',
       'Também é importante organizar os fatos em ordem cronológica, destacando datas, pessoas envolvidas e principais dúvidas.',
@@ -170,7 +170,7 @@ export const articles = [
     category: 'Família',
     readTime: '6 min',
     date: '10 Dez 2025',
-    image: `${import.meta.env.BASE_URL}images/articles/consultation.jpg`,
+    image: `${import.meta.env.BASE_URL}images/editorial/client-meeting.jpg`,
     content: [
       'A atuação consultiva tem foco preventivo: analisar situações, orientar decisões e reduzir riscos antes que um conflito se agrave.',
       'Já a atuação contenciosa envolve a defesa de interesses em processos judiciais, administrativos ou negociações litigiosas.',

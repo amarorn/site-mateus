@@ -40,17 +40,34 @@ function HomePage() {
   );
 }
 
-function PageShell({ children }: { children: React.ReactNode }) {
+function PageShell({
+  children,
+  image,
+}: {
+  children: React.ReactNode;
+  image?: string;
+}) {
   return (
-    <main className="bg-offwhite min-h-screen pt-[120px] pb-20">
-      <div className="content-max">{children}</div>
+    <main className="relative bg-offwhite min-h-screen pt-[120px] pb-20 overflow-hidden">
+      {image && (
+        <>
+          <img
+            src={image}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-x-0 top-0 h-[420px] w-full object-cover opacity-20"
+          />
+          <div className="absolute inset-x-0 top-0 h-[420px] bg-gradient-to-b from-navy-deep/80 via-offwhite/75 to-offwhite" />
+        </>
+      )}
+      <div className="content-max relative">{children}</div>
     </main>
   );
 }
 
 function ArticlesPage() {
   return (
-    <PageShell>
+    <PageShell image={`${import.meta.env.BASE_URL}images/editorial/legal-book.jpg`}>
       <span className="label-uppercase text-slate">CONTEÚDO JURÍDICO</span>
       <h1
         className="font-serif text-navy mt-3 leading-[1.05]"
@@ -95,7 +112,7 @@ function ArticlePage() {
   if (!article) return <NotFoundPage />;
 
   return (
-    <PageShell>
+    <PageShell image={article.image}>
       <Link to="/artigos" className="font-sans text-slate text-sm hover:text-navy">
         ← Voltar para artigos
       </Link>
@@ -132,7 +149,7 @@ function ArticlePage() {
 
 function AreasPage() {
   return (
-    <PageShell>
+    <PageShell image={`${import.meta.env.BASE_URL}images/editorial/abstract-balance.jpg`}>
       <span className="label-uppercase text-slate">ÁREAS DE ATUAÇÃO</span>
       <h1
         className="font-serif text-navy mt-3 leading-[1.05]"
@@ -168,7 +185,7 @@ function AreaPage() {
   if (!area) return <NotFoundPage />;
 
   return (
-    <PageShell>
+    <PageShell image={`${import.meta.env.BASE_URL}images/editorial/contract-stack.jpg`}>
       <Link to="/areas" className="font-sans text-slate text-sm hover:text-navy">
         ← Voltar para áreas
       </Link>

@@ -2,18 +2,18 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const IMAGES = [
   {
-    src: `${import.meta.env.BASE_URL}images/mateus-desk-1.jpg`,
-    alt: 'Matheus Giovanne durante atendimento jurídico individual',
+    src: `${import.meta.env.BASE_URL}images/editorial/client-meeting.jpg`,
+    alt: 'Atendimento jurídico individual com análise de documentos',
     label: 'Atendimento individual',
   },
   {
-    src: `${import.meta.env.BASE_URL}images/articles/contracts.jpg`,
-    alt: 'Documentos e contratos analisados em mesa de trabalho',
+    src: `${import.meta.env.BASE_URL}images/editorial/legal-book.jpg`,
+    alt: 'Livro jurídico e caneta em ambiente profissional',
     label: 'Análise documental',
   },
   {
-    src: `${import.meta.env.BASE_URL}images/articles/documents.jpg`,
-    alt: 'Organização de documentos jurídicos',
+    src: `${import.meta.env.BASE_URL}images/editorial/contract-stack.jpg`,
+    alt: 'Contratos organizados sobre mesa de trabalho',
     label: 'Estratégia e preparo',
   },
 ];

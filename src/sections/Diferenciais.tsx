@@ -35,6 +35,13 @@ export function Diferenciais() {
           ref={sectionRef}
           className="relative rounded-[28px] bg-navy-deep p-6 md:p-10 lg:p-12 overflow-hidden"
         >
+          <img
+            src={`${import.meta.env.BASE_URL}images/editorial/abstract-balance.jpg`}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover opacity-[0.18]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/88 to-navy-deep/65" />
           <div className="absolute right-[-40px] top-[-40px] w-80 h-80 rounded-full border border-champagne/10" />
           <LogoMark
             variant="dark"

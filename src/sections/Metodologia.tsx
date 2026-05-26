@@ -57,6 +57,13 @@ export function Metodologia() {
 
   return (
     <section className="relative bg-navy-deep section-padding overflow-hidden">
+      <img
+        src={`${import.meta.env.BASE_URL}images/editorial/abstract-balance.jpg`}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.12] pointer-events-none"
+      />
+      <div className="absolute inset-0 pointer-events-none bg-navy-deep/82" />
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_20%_15%,rgba(216,198,168,0.09),transparent_36%),radial-gradient(ellipse_at_80%_65%,rgba(42,63,106,0.42),transparent_48%)]" />
       <div className="absolute inset-0 pointer-events-none opacity-[0.05] bg-[linear-gradient(rgba(216,198,168,0.24)_1px,transparent_1px),linear-gradient(90deg,rgba(216,198,168,0.2)_1px,transparent_1px)] bg-[size:92px_92px]" />
       <div className="content-max">

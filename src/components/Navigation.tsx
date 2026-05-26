@@ -1,11 +1,11 @@
 import { useEffect, useState, useCallback } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import { Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
 
 const NAV_LINKS = [
   { label: 'Sobre', href: '#sobre' },
-  { label: 'Áreas de Atuação', href: '#areas' },
+  { label: 'Áreas', href: '#areas' },
   { label: 'Artigos', href: '#artigos' },
   { label: 'Contato', href: '#contato' },
 ];
@@ -17,6 +17,8 @@ export function Navigation() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const location = useLocation();
   const navigate = useNavigate();
+  const isHome = location.pathname === '/';
+  const solidNav = scrolled || !isHome;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,12 +66,12 @@ export function Navigation() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-[86px] flex items-center justify-between transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 h-[78px] md:h-[86px] flex items-center justify-between transition-all duration-500 ${
+          solidNav
             ? 'bg-navy/90 backdrop-blur-xl shadow-[0_16px_40px_rgba(13,21,37,0.22)] border-b border-champagne/10'
             : 'bg-transparent'
         }`}
-        style={{ padding: '0 clamp(20px, 4vw, 60px)' }}
+        style={{ padding: '0 clamp(14px, 4vw, 60px)' }}
       >
         <div
           className="absolute left-0 bottom-0 h-px bg-gradient-to-r from-champagne via-white/40 to-champagne transition-all duration-300"
@@ -82,20 +84,19 @@ export function Navigation() {
           className="group/nav-logo relative flex items-center pointer-events-auto"
           aria-label="Ir para o início"
         >
-          <span className="absolute -inset-3 rounded-2xl bg-champagne/15 blur-2xl opacity-40 transition-opacity duration-500 group-hover/nav-logo:opacity-100" />
-          <span className="absolute -right-2 -top-2 h-3 w-3 rounded-full bg-champagne shadow-[0_0_22px_rgba(216,198,168,0.9)] animate-pulse" />
-          <span className="relative flex items-center rounded-xl border border-champagne/40 bg-navy-deep/55 px-3.5 py-2 shadow-[0_0_0_1px_rgba(255,255,255,0.05),0_14px_38px_rgba(0,0,0,0.22)] backdrop-blur-md transition-all duration-500 group-hover/nav-logo:-translate-y-0.5 group-hover/nav-logo:border-champagne/80 group-hover/nav-logo:bg-navy-deep/80">
-            <Logo variant="dark" className="h-[52px] w-auto nav-logo-svg" />
+          <span className="absolute -inset-2 rounded-2xl bg-champagne/10 blur-xl opacity-25 transition-opacity duration-500 group-hover/nav-logo:opacity-70" />
+          <span className="relative flex items-center rounded-xl border border-champagne/30 bg-navy-deep/70 px-2.5 py-1.5 md:px-3 md:py-2 shadow-[0_10px_28px_rgba(0,0,0,0.22)] backdrop-blur-md transition-all duration-500 group-hover/nav-logo:-translate-y-0.5 group-hover/nav-logo:border-champagne/65">
+            <Logo variant="dark" className="h-[42px] md:h-[48px] w-auto nav-logo-svg" />
           </span>
         </button>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-2 py-2 backdrop-blur-md">
+        <div className="hidden xl:flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.035] px-2 py-2 backdrop-blur-md">
           {NAV_LINKS.map((link) => (
             <button
               key={link.href}
               onClick={() => scrollTo(link.href)}
-              className={`relative rounded-full px-5 py-2.5 font-sans text-[12px] font-medium tracking-[0.12em] uppercase transition-all duration-300 ${
+              className={`relative rounded-full px-4 py-2.5 font-sans text-[12px] font-medium tracking-[0.1em] uppercase transition-all duration-300 ${
                 activeSection === link.href
                   ? 'text-navy bg-champagne shadow-[0_8px_22px_rgba(216,198,168,0.18)]'
                   : 'text-white/78 hover:text-champagne hover:bg-white/[0.04]'
@@ -104,39 +105,19 @@ export function Navigation() {
               {link.label}
             </button>
           ))}
-          <Link
-            to="/areas"
-            className={`relative rounded-full px-5 py-2.5 font-sans text-[12px] font-medium tracking-[0.12em] uppercase transition-all duration-300 ${
-              location.pathname.startsWith('/areas')
-                ? 'text-navy bg-champagne shadow-[0_8px_22px_rgba(216,198,168,0.18)]'
-                : 'text-white/78 hover:text-champagne hover:bg-white/[0.04]'
-            }`}
-          >
-            Áreas
-          </Link>
-          <Link
-            to="/artigos"
-            className={`relative rounded-full px-5 py-2.5 font-sans text-[12px] font-medium tracking-[0.12em] uppercase transition-all duration-300 ${
-              location.pathname.startsWith('/artigos')
-                ? 'text-navy bg-champagne shadow-[0_8px_22px_rgba(216,198,168,0.18)]'
-                : 'text-white/78 hover:text-champagne hover:bg-white/[0.04]'
-            }`}
-          >
-            Conteúdo
-          </Link>
         </div>
 
         {/* Desktop CTA */}
         <button
           onClick={() => scrollTo('#contato')}
-          className="hidden lg:inline-flex btn-outline-champagne"
+          className="hidden xl:inline-flex btn-outline-champagne"
         >
           Falar com Matheus
         </button>
 
         {/* Mobile hamburger */}
         <button
-          className="lg:hidden text-white p-2 pointer-events-auto"
+          className="xl:hidden text-white p-2 pointer-events-auto"
           onClick={() => setMobileOpen(true)}
           aria-label="Abrir menu"
         >
@@ -152,8 +133,8 @@ export function Navigation() {
           aria-modal="true"
         >
           <div className="flex items-center justify-between h-[86px] px-5 md:px-10">
-            <span className="flex items-center rounded-lg border border-champagne/35 bg-navy-deep/45 px-3 py-2">
-              <Logo variant="dark" className="h-12 w-auto" />
+            <span className="flex items-center rounded-lg border border-champagne/35 bg-navy-deep/60 px-2.5 py-1.5">
+              <Logo variant="dark" className="h-11 w-auto" />
             </span>
             <button
               onClick={() => setMobileOpen(false)}

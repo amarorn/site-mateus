@@ -88,6 +88,15 @@ export function Hero() {
         } as React.CSSProperties
       }
     >
+      <img
+        src={`${import.meta.env.BASE_URL}images/editorial/abstract-commitment.jpg`}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.28] pointer-events-none"
+      />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-navy-deep via-navy-deep/86 to-navy-deep/44" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-navy-deep via-transparent to-navy-deep/35" />
+
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_260px_at_var(--mx)_var(--my),rgba(216,198,168,0.12),transparent_68%)] transition-opacity duration-300" />
 
       {/* Subtle gradient overlay */}
